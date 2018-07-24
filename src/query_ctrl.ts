@@ -11,7 +11,7 @@ export class ChangeMyNameQueryCtrl extends QueryCtrl {
   };
 
   /** @ngInject **/
-  constructor($scope, $injector, private templateSrv) {
+  constructor($scope, $injector, templateSrv) {
     super($scope, $injector);
 
     _.defaultsDeep(this.target, this.defaults);

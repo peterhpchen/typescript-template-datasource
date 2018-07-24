@@ -1,4 +1,4 @@
-/******/ (function(modules) { // webpackBootstrap
+define(["app/plugins/sdk","lodash"], function(__WEBPACK_EXTERNAL_MODULE_grafana_app_plugins_sdk__, __WEBPACK_EXTERNAL_MODULE_lodash__) { return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -866,7 +866,6 @@ var ChangeMyNameQueryCtrl = /** @class */function (_super) {
     /** @ngInject **/
     function ChangeMyNameQueryCtrl($scope, $injector, templateSrv) {
         var _this = _super.call(this, $scope, $injector) || this;
-        _this.templateSrv = templateSrv;
         _this.defaults = {};
         _lodash2.default.defaultsDeep(_this.target, _this.defaults);
         _this.target.target = _this.target.target || 'select metric';
@@ -893,7 +892,7 @@ exports.ChangeMyNameQueryCtrl = ChangeMyNameQueryCtrl;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = app/plugins/sdk;
+module.exports = __WEBPACK_EXTERNAL_MODULE_grafana_app_plugins_sdk__;
 
 /***/ }),
 
@@ -904,9 +903,9 @@ module.exports = app/plugins/sdk;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = lodash;
+module.exports = __WEBPACK_EXTERNAL_MODULE_lodash__;
 
 /***/ })
 
-/******/ });
+/******/ })});;
 //# sourceMappingURL=module.js.map
