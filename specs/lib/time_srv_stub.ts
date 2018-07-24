@@ -1,5 +1,5 @@
 import {sinon} from '../lib/common';
-import dateMath from 'app/core/utils/datemath';
+import dateMath from 'grafana/app/core/utils/datemath';
 
 export default class TimeSrvStub {
   init = sinon.spy();

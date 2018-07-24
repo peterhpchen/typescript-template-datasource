@@ -2,13 +2,16 @@
   "compileOnSave": false,
   "compilerOptions": {
       "target": "ES5",
-      "module": "system",
+      "module": "ES6",
       "sourceMap": true,
       "declaration": true,
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "noImplicitAny": false
   },
+  "include": [
+    "./src/**/*.ts"
+  ],
   "exclude": [
       "node_modules"
   ]
