@@ -18,8 +18,8 @@
       {"name": "Project site", "url": "https://github.com/yourorg/your-datasource"},
       {"name": "Apache License", "url": "https://github.com/yourorg/your-datasource/blob/master/LICENSE"}
     ],
-    "version": "%VERSION%",
-    "updated": "%TODAY%"
+    "version": "0.0.1",
+    "updated": "2018-07-24"
   },
 
   "dependencies": {

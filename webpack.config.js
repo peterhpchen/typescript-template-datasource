@@ -3,6 +3,8 @@ const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
+const pkgJson = require('./package.json');
+
 module.exports = {
   target: 'node',
   context: path.join(__dirname, 'src'),
@@ -50,11 +52,18 @@ module.exports = {
     new CleanWebpackPlugin('dist'),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new CopyWebpackPlugin([
-      './plugin.json',
+      {
+        from: './plugin.json',
+        transform (content, path) {
+          return content.toString()
+            .replace('%VERSION%', pkgJson.version)
+            .replace('%TODAY%', new Date().toISOString().slice(0, 10));
+        }
+      },
       '../README.md',
       '../LICENSE',
       './partials/*',
       './img/*'
-    ]),
+    ])
   ]
 }
