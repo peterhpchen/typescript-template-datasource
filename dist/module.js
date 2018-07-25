@@ -687,22 +687,21 @@ module.exports = function (css) {
 /*!************************!*\
   !*** ./config_ctrl.ts ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: ChangeMyNameConfigCtrl */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChangeMyNameConfigCtrl", function() { return ChangeMyNameConfigCtrl; });
 ///<reference path="../node_modules/grafana-sdk-mocks/app/headers/common.d.ts" />
-var ChangeMyNameConfigCtrl = /** @class */function () {
-    function ChangeMyNameConfigCtrl($scope) {}
+var ChangeMyNameConfigCtrl = /** @class */ (function () {
+    function ChangeMyNameConfigCtrl($scope) {
+    }
     ChangeMyNameConfigCtrl.templateUrl = 'partials/config.html';
     return ChangeMyNameConfigCtrl;
-}();
-exports.ChangeMyNameConfigCtrl = ChangeMyNameConfigCtrl;
+}());
+
+
 
 /***/ }),
 
@@ -740,17 +739,13 @@ if(false) {}
 /*!***********************!*\
   !*** ./datasource.ts ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
+__webpack_require__.r(__webpack_exports__);
 ///<reference path="../node_modules/grafana-sdk-mocks/app/headers/common.d.ts" />
-var ChangeMyNameDatasource = /** @class */function () {
+var ChangeMyNameDatasource = /** @class */ (function () {
     /** @ngInject */
     function ChangeMyNameDatasource(instanceSettings, backendSrv, templateSrv, $q) {
         this.backendSrv = backendSrv;
@@ -776,8 +771,9 @@ var ChangeMyNameDatasource = /** @class */function () {
         });
     };
     return ChangeMyNameDatasource;
-}();
-exports.default = ChangeMyNameDatasource;
+}());
+/* harmony default export */ __webpack_exports__["default"] = (ChangeMyNameDatasource);
+
 
 /***/ }),
 
@@ -785,36 +781,32 @@ exports.default = ChangeMyNameDatasource;
 /*!*******************!*\
   !*** ./module.ts ***!
   \*******************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: Datasource, QueryCtrl, ConfigCtrl, AnnotationsQueryCtrl */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AnnotationsQueryCtrl", function() { return ChangeMyNameAnnotationsQueryCtrl; });
+/* harmony import */ var _datasource__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./datasource */ "./datasource.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Datasource", function() { return _datasource__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _query_ctrl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./query_ctrl */ "./query_ctrl.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "QueryCtrl", function() { return _query_ctrl__WEBPACK_IMPORTED_MODULE_1__["ChangeMyNameQueryCtrl"]; });
+
+/* harmony import */ var _config_ctrl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./config_ctrl */ "./config_ctrl.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ConfigCtrl", function() { return _config_ctrl__WEBPACK_IMPORTED_MODULE_2__["ChangeMyNameConfigCtrl"]; });
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.AnnotationsQueryCtrl = exports.ConfigCtrl = exports.QueryCtrl = exports.Datasource = undefined;
 
-var _datasource = __webpack_require__(/*! ./datasource */ "./datasource.ts");
 
-var _datasource2 = _interopRequireDefault(_datasource);
-
-var _query_ctrl = __webpack_require__(/*! ./query_ctrl */ "./query_ctrl.ts");
-
-var _config_ctrl = __webpack_require__(/*! ./config_ctrl */ "./config_ctrl.ts");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var ChangeMyNameAnnotationsQueryCtrl = /** @class */function () {
-    function ChangeMyNameAnnotationsQueryCtrl() {}
+var ChangeMyNameAnnotationsQueryCtrl = /** @class */ (function () {
+    function ChangeMyNameAnnotationsQueryCtrl() {
+    }
     ChangeMyNameAnnotationsQueryCtrl.templateUrl = 'partials/annotations.editor.html';
     return ChangeMyNameAnnotationsQueryCtrl;
-}();
-exports.Datasource = _datasource2.default;
-exports.QueryCtrl = _query_ctrl.ChangeMyNameQueryCtrl;
-exports.ConfigCtrl = _config_ctrl.ChangeMyNameConfigCtrl;
-exports.AnnotationsQueryCtrl = ChangeMyNameAnnotationsQueryCtrl;
+}());
+
+
 
 /***/ }),
 
@@ -822,52 +814,39 @@ exports.AnnotationsQueryCtrl = ChangeMyNameAnnotationsQueryCtrl;
 /*!***********************!*\
   !*** ./query_ctrl.ts ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: ChangeMyNameQueryCtrl */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.ChangeMyNameQueryCtrl = undefined;
-
-var _lodash = __webpack_require__(/*! lodash */ "lodash");
-
-var _lodash2 = _interopRequireDefault(_lodash);
-
-var _sdk = __webpack_require__(/*! grafana/app/plugins/sdk */ "grafana/app/plugins/sdk");
-
-__webpack_require__(/*! ./css/query_editor.css */ "./css/query_editor.css");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChangeMyNameQueryCtrl", function() { return ChangeMyNameQueryCtrl; });
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "lodash");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var grafana_app_plugins_sdk__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! grafana/app/plugins/sdk */ "grafana/app/plugins/sdk");
+/* harmony import */ var grafana_app_plugins_sdk__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(grafana_app_plugins_sdk__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _css_query_editor_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/query_editor.css */ "./css/query_editor.css");
+/* harmony import */ var _css_query_editor_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_query_editor_css__WEBPACK_IMPORTED_MODULE_2__);
 ///<reference path="../node_modules/grafana-sdk-mocks/app/headers/common.d.ts" />
-var __extends = undefined && undefined.__extends || function () {
-    var extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function (d, b) {
-        d.__proto__ = b;
-    } || function (d, b) {
-        for (var p in b) {
-            if (b.hasOwnProperty(p)) d[p] = b[p];
-        }
-    };
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
     return function (d, b) {
         extendStatics(d, b);
-        function __() {
-            this.constructor = d;
-        }
+        function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
-}();
+})();
 
-var ChangeMyNameQueryCtrl = /** @class */function (_super) {
+
+
+var ChangeMyNameQueryCtrl = /** @class */ (function (_super) {
     __extends(ChangeMyNameQueryCtrl, _super);
     /** @ngInject **/
     function ChangeMyNameQueryCtrl($scope, $injector, templateSrv) {
         var _this = _super.call(this, $scope, $injector) || this;
         _this.defaults = {};
-        _lodash2.default.defaultsDeep(_this.target, _this.defaults);
+        lodash__WEBPACK_IMPORTED_MODULE_0___default.a.defaultsDeep(_this.target, _this.defaults);
         _this.target.target = _this.target.target || 'select metric';
         _this.target.type = _this.target.type || 'timeserie';
         return _this;
@@ -880,8 +859,9 @@ var ChangeMyNameQueryCtrl = /** @class */function (_super) {
     };
     ChangeMyNameQueryCtrl.templateUrl = 'partials/query.editor.html';
     return ChangeMyNameQueryCtrl;
-}(_sdk.QueryCtrl);
-exports.ChangeMyNameQueryCtrl = ChangeMyNameQueryCtrl;
+}(grafana_app_plugins_sdk__WEBPACK_IMPORTED_MODULE_1__["QueryCtrl"]));
+
+
 
 /***/ }),
 

@@ -21,13 +21,7 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loaders: [
-          {
-            loader: 'babel-loader',
-            options: { presets: ['env'] }
-          },
-          'ts-loader'
-        ]
+        loader: 'ts-loader'
       },
       {
         test: /\.css$/,
