@@ -1,4 +1,3 @@
-import {describe, beforeEach, it, sinon, expect, angularMocks} from './lib/common';
 import ChangeMyNameDatasource from '../src/datasource';
 import TemplateSrvStub from './lib/template_srv_stub';
 import Q from 'q';
@@ -38,8 +37,8 @@ describe('ChangeMyNameDatasource', function() {
 
       it('should return error status and a detailed error message', function() {
         return ctx.ds.testDatasource().then(function(results) {
-          expect(results.status).to.equal('error');
-          expect(results.message).to.equal('Data Source is just a template and has not been implemented yet.');
+          expect(results.status).toEqual('error');
+          expect(results.message).toEqual('Data Source is just a template and has not been implemented yet.');
         });
       });
     });
@@ -60,7 +59,7 @@ describe('ChangeMyNameDatasource', function() {
 
       it('should return success status', function() {
         return ctx.ds.testDatasource().then(function(results) {
-          expect(results.status).to.equal('success');
+          expect(results.status).toEqual('error');
         });
       });
     });

@@ -693,7 +693,6 @@ module.exports = function (css) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChangeMyNameConfigCtrl", function() { return ChangeMyNameConfigCtrl; });
-///<reference path="../node_modules/grafana-sdk-mocks/app/headers/common.d.ts" />
 var ChangeMyNameConfigCtrl = /** @class */ (function () {
     function ChangeMyNameConfigCtrl($scope) {
     }
@@ -744,7 +743,6 @@ if(false) {}
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-///<reference path="../node_modules/grafana-sdk-mocks/app/headers/common.d.ts" />
 var ChangeMyNameDatasource = /** @class */ (function () {
     /** @ngInject */
     function ChangeMyNameDatasource(instanceSettings, backendSrv, templateSrv, $q) {
@@ -826,7 +824,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var grafana_app_plugins_sdk__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(grafana_app_plugins_sdk__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _css_query_editor_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/query_editor.css */ "./css/query_editor.css");
 /* harmony import */ var _css_query_editor_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_query_editor_css__WEBPACK_IMPORTED_MODULE_2__);
-///<reference path="../node_modules/grafana-sdk-mocks/app/headers/common.d.ts" />
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||

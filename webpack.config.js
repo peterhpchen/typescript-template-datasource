@@ -30,7 +30,7 @@ module.exports = {
     ]
   },
   externals: [
-    'jquery', 'lodash', 'moment',
+    'jquery', 'lodash', 'moment', 'q',
     function(context, request, callback) {
       var prefix = 'grafana/';
       if (request.indexOf(prefix) === 0) {
